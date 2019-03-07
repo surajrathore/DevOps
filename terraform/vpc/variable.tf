@@ -18,15 +18,6 @@ variable "public_subnet_cidr" {
 #	}
 }
 
-variable "public_subnet_cidr_temp" {
-  description = "CIDR for the public subnet"
-  default = {
-    ap-southeast-1a = "10.10.1.0/24"
-    ap-southeast-1b = "10.10.2.0/24"
-    ap-southeast-1c = "10.10.3.0/24"
-       }
-}
-
 variable "private_subnet_cidr" {
   description = "CIDR for the private subnet"
   default = "10.10.10.0/24"
